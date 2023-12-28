@@ -70,7 +70,7 @@ export default function Footer() {
             </div>
             <div className='flex items-center '>
               <i className='fa-regular fa-envelope mr-4'></i>
-              <p>nguyenduylk202@gmail.com</p>
+              <p>cybersoft@gmail.com</p>
             </div>
             <div className='flex items-center '>
               <i className='fa-solid fa-phone mr-4'></i>

@@ -1,0 +1,33 @@
+div#searchBar {
+    div#movieName,
+    div#cinemaComplex,
+    div#showTimes {
+        position: relative;
+        border-right: 1px solid #ccc;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: #fe7900;
+            height: 3px;
+            bottom: -3px;
+            left: 50%;
+            width: 0%;
+            transform: translateX(-50%);
+            transition: all 0.3s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+.ant-select-selector {
+    .ant-select-selection-item {
+        font-weight: 800;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    #searchBar {
+        display: none;
+    }
+}

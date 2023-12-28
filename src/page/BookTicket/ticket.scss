@@ -1,0 +1,91 @@
+#bookTicket {
+    button.ghe {
+        //Ghế thường
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-radius: 8px;
+        background-color: rgb(226, 232, 240);
+        position: relative;
+        transition: all 0.3s;
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+    button.gheDaDat {
+        cursor: no-drop;
+    }
+    button.gheVip {
+        background-color: rgb(255, 138, 76);
+        &:hover {
+            background-color: rgb(232, 115, 53);
+        }
+    }
+    .gheDangDat {
+        background: #6bd425 !important;
+    }
+    .gheDaDuocDat {
+        //ghế do mình đặt
+        background: #5c5248 !important;
+        color: orange;
+        box-shadow:
+            rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+            rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+            rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    .trapezoid {
+        border-bottom: 50px solid gray;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        height: 0;
+        width: 100%;
+        opacity: 0.3;
+        filter: drop-shadow(0px 128px 63px rgba(8, 8, 8, 0.38));
+        -webkit-filter: drop-shadow(0px 128px 63px rgba(8, 8, 8, 0.38));
+        -moz-filter: drop-shadow(0px 128px 63px rgba(8, 8, 8, 0.38));
+    }
+}
+#info__ticket {
+    div.billTitle {
+        padding: 24px 16px;
+        border-bottom: 1px solid #ccc;
+        p {
+            font-weight: 600;
+        }
+        span {
+            color: rgba(231, 74, 12, 0.814);
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+}
+
+#danhSachGhe {
+    &::-webkit-scrollbar {
+        height: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    #bookTicket {
+        .listBtnDatGhe {
+            button {
+                width: 30px;
+                height: 30px;
+                font-size: 12px;
+                margin: 3px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

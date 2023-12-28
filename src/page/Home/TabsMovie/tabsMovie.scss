@@ -1,0 +1,114 @@
+.listPhim {
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+    border-radius: 8px;
+    width: 5px;
+    background: #ccc;
+}
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-tab {
+    padding: 10px 20px;
+    opacity: 0.4;
+    transition: all 0.3s;
+}
+.ant-tabs-tab-active {
+    opacity: 1 !important;
+}
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
+    margin: 0;
+}
+.ant-tabs-nav-list {
+    .ant-tabs-tab-active {
+        opacity: 1;
+    }
+}
+.ant-tabs-nav-list {
+    .ant-tabs-tab {
+        opacity: 0.4;
+        transition: all 0.3s;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+        display: none;
+    }
+    .container {
+        .ant-tabs {
+            display: block;
+            border-radius: 5px;
+            .ant-tabs-content-holder {
+                height: 700px;
+                overflow: auto;
+                &::-webkit-scrollbar {
+                    width: 6px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                    border-radius: 8px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #ccc;
+                    border-radius: 8px;
+                    opacity: 0.4;
+                }
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #555;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list {
+        flex-direction: row;
+    }
+    .ant-tabs-left > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane {
+        padding-left: 0;
+    }
+    .listPhim {
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 8px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+    .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
+        margin: 0;
+        padding: 4px 8px;
+    }
+}
+
+.containerTabs {
+    width: 65%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 991.98px) {
+    .containerTabs {
+        width: 85%;
+    }
+}

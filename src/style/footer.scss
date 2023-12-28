@@ -1,0 +1,47 @@
+.footer__top {
+    color: #bdbdbd;
+}
+.footer__top h4 {
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.footer__top img {
+    margin-right: 15px;
+    border-radius: 8px;
+}
+.footer__top h5 {
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+.footer__top h5:hover {
+    color: #fe7900;
+}
+.footer__top span {
+    color: #999;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .footer__top h5 {
+        font-size: 12px;
+    }
+    .footer__top h4 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .footer__top {
+        #recentPosts {
+            .recentPost__top {
+                .recentPost__info {
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+}
